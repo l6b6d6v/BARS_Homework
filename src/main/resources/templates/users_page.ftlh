@@ -8,6 +8,25 @@
     <title>Document</title>
 </head>
 <body>
-
+<div>
+    <table>
+        <tr>
+            <th>dogovor_id</th>
+            <th>dog_no</th>
+            <th>dog_date</th>
+            <th>update_time</th>
+            <th>is_updated</th>
+        </tr>
+        <#list dogovors as dogovor>
+            <tr>
+                <td>${dogovor.dogovor_id}</td>
+                <td>${dogovor.dog_no}</td>
+                <td>${dogovor.dog_date}</td>
+                <td>${dogovor.update_time}</td>
+                <td>${dogovor.is_updated}</td>
+            </tr>
+        </#list>
+    </table>
+</div>
 </body>
 </html>
