@@ -11,19 +11,19 @@
 <div>
     <table>
         <tr>
-            <th>id</th>
-            <th>first_Name</th>
-            <th>last_Name</th>
-            <th>email</th>
-            <th>password</th>
+            <th>dogovor</th>
+            <th>dog_no</th>
+            <th>dog_date</th>
+            <th>update_time</th>
+            <th>is_updated</th>
         </tr>
-        <#list users as user>
+        <#list dogovors as dogovor>
             <tr>
-                <td>${user.id}</td>
-                <td>${user.firstName}</td>
-                <td>${user.lastName}</td>
-                <td>${user.email}</td>
-                <td>${user.password}</td>
+                <td>${dogovor.dogovor}</td>
+                <td>${dogovor.dog_no}</td>
+                <td>${dogovor.dog_date}</td>
+                <td>${dogovor.update_time}</td>
+                <td>${dogovor.is_updated?c}</td>
             </tr>
         </#list>
     </table>
