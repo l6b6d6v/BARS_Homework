@@ -10,9 +10,4 @@ public class SigninController {
     public String getSigninPage() {
         return "signin_page";
     }
-
-    @PostMapping("/signin")
-    public String signupUser() {
-        return "redirect:/dogovors/dog";
-    }
 }
